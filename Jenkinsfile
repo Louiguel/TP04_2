@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Run Script') {
+            steps {
+                bat 'python number_signe.py 5'
+            }
+        }
+    }
+}
