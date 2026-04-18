@@ -2,9 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Script') {
+        stage('Test Cases') {
             steps {
                 bat 'python number_signe.py 5'
+                bat 'python number_signe.py -3'
+                bat 'python number_signe.py 0'
             }
         }
     }
